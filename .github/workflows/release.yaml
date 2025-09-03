@@ -12,6 +12,9 @@ on:
 jobs:
   build:
     name: Build
+    permissions:
+      attestations: write
+      id-token: write
     runs-on: ubuntu-latest
     outputs:
       artifact-name: ${{ steps.build.outputs.artifact-name }}
@@ -23,6 +26,8 @@ jobs:
       - id: build
         name: Build and Inspect a Python Package
         uses: hynek/build-and-inspect-python-package@v2
+        with:
+          attest-build-provenance-github: true
 
   publish:
     name: Publish
@@ -64,7 +69,7 @@ jobs:
           name: ${{ needs.build.outputs.artifact-name }}
           path: dist
       - name: Upload Release Assets
-        uses: liblaf/actions-ts/release@dist
+        uses: liblaf/actions/release@dist
         with:
           files: dist/*
           tag: ${{ github.ref_name }}
