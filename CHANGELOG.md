@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.1.1](https://github.com/liblaf/pytest-preset/compare/v0.1.0..v0.1.1) - 2025-09-03
+
+### ✨ Features
+
+- update tooling configurations and add pytest plugin - ([917acef](https://github.com/liblaf/pytest-preset/commit/917acef1440a5452401924ad5b07a0bf82d94b29))
+
+### ❤️ New Contributors
+
+- [@liblaf](https://github.com/liblaf) made their first contribution
+- [@liblaf-bot[bot]](https://github.com/apps/liblaf-bot) made their first contribution
+
 ## [0.1.0] - 2025-09-03
 
 ### ✨ Features
@@ -9,4 +20,5 @@
 
 ### ❤️ New Contributors
 
+- [@liblaf-bot[bot]](https://github.com/apps/liblaf-bot) made their first contribution in [#2](https://github.com/liblaf/pytest-preset/pull/2)
 - [@liblaf](https://github.com/liblaf) made their first contribution
