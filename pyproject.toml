@@ -27,9 +27,8 @@ classifiers = [
 dependencies = [
   "hypothesis>=6,<7",
   "pytest-codspeed>=4,<5",
-  "pytest-cov>=6,<7",
-  "pytest-custom-exit-code>=0.3,<0.4",
-  "pytest-randomly>=3,<4",
+  "pytest-cov>=7,<8",
+  "pytest-randomly>=4,<5",
   "pytest-xdist>=3,<4",
   "pytest>=8,<9",
 ]
@@ -73,22 +72,21 @@ packages = ["src/liblaf"]
 source = "vcs"
 
 [tool.pyright]
-exclude = ["**/.*", "**/__pycache__", "**/marimo", "**/node_modules"]
 extends = ".config/linters/pyrightconfig.json"
 
 [tool.pytest.ini_options]
 addopts = [
+  "--doctest-modules",
   "--hypothesis-show-statistics",
+  "--import-mode=importlib",
   "--showlocals",
   "--strict-config",
   "--strict-markers",
-  "--suppress-no-test-exit-code",
 ]
 testpaths = ["benches", "src", "tests"]
 
 [tool.ruff]
 extend = ".config/linters/.ruff.toml"
-exclude = ["**/marimo/"]
 
 [tool.uv]
 default-groups = "all"
