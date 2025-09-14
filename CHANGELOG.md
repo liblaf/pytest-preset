@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/liblaf/pytest-preset/compare/v0.1.1...v0.1.2) (2025-09-14)
+
+
+### 🐛 Bug Fixes
+
+* update pytest dependencies and configuration ([95d2abb](https://github.com/liblaf/pytest-preset/commit/95d2abba0af0a533f5f6afe497d13789484c2c26))
+
 ## [0.1.1](https://github.com/liblaf/pytest-preset/compare/v0.1.0..v0.1.1) - 2025-09-03
 
 ### ✨ Features
