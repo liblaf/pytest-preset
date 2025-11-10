@@ -8,7 +8,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 license = "MIT"
 authors = [
-  { name = "liblaf", email = "30631553+liblaf@users.noreply.github.com" },
+  { name = "liblaf", email = "30631553+liblaf@users.noreply.github.com" }
 ]
 keywords = []
 classifiers = [
@@ -22,15 +22,16 @@ classifiers = [
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: 3.13",
-  "Typing :: Typed",
+  "Programming Language :: Python :: 3.14",
+  "Typing :: Typed"
 ]
 dependencies = [
   "hypothesis>=6,<7",
+  "pytest>=9,<10",
   "pytest-codspeed>=4,<5",
   "pytest-cov>=7,<8",
   "pytest-randomly>=4,<5",
-  "pytest-xdist>=3,<4",
-  "pytest>=8,<9",
+  "pytest-xdist>=3,<4"
 ]
 dynamic = ["version"]
 
@@ -44,8 +45,8 @@ dynamic = ["version"]
 "Source Code" = "https://github.com/liblaf/pytest-preset"
 
 [dependency-groups]
-build = ["check-wheel-contents>=0.6,<0.7", "hatch>=1,<2", "twine>=6,<7"]
 dev = ["icecream>=2,<3"]
+build = ["check-wheel-contents>=0.6,<0.7", "hatch>=1,<2", "twine>=6,<7"]
 docs = ["liblaf-mkdocs-preset>=0.2,<0.3", "mkdocs>=1,<2"]
 
 [build-system]
@@ -81,7 +82,7 @@ addopts = [
   "--import-mode=importlib",
   "--showlocals",
   "--strict-config",
-  "--strict-markers",
+  "--strict-markers"
 ]
 testpaths = ["benches", "src", "tests"]
 
