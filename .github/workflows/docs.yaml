@@ -27,7 +27,7 @@ jobs:
           fetch-depth: 0
       - id: config
         name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
       - name: Set Environment Variables
         run: printf 'SITE_URL=%s\n' '${{ steps.config.outputs.base_url }}' >> "$GITHUB_ENV"
       - name: Setup Python
